@@ -1,0 +1,121 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/punchBlauw"
+    android:theme="@android:style/Theme.NoTitleBar" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <ImageView
+	        android:id="@+id/punchLogo"
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:layout_weight="0"
+	        android:src="@drawable/punchlogo" />
+	    
+	    <TextView 
+	        android:id="@+id/settingsMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/noticeSize"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center" />
+	    
+	    <TextView 
+	        android:id="@+id/memberTableUpdateMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/noticeSize"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center" />
+	    
+	    <TextView 
+	        android:id="@+id/memberTableDownloadAmount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/noticeSize"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center" />
+	    
+	    <TextView 
+	        android:id="@+id/userSetString"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/noticeSize"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center"
+	        android:text="@string/userSetString" />
+	    
+	    <EditText android:id="@+id/usernameSet"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="15dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_gravity="center"
+	        android:background="@color/white"
+	        android:hint="@string/userSetHint"
+	        android:maxLength="100" />
+	    
+	    <TextView 
+	        android:id="@+id/passSetString"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/noticeSize"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_gravity="center"
+	        android:text="@string/passSetString" />
+	    
+	    <EditText android:id="@+id/passwordSet"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="15dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_gravity="center"
+	        android:background="@color/white"
+	        android:hint="@string/passSetHint"
+	        android:inputType="textPassword"
+	        android:maxLength="100" />
+	    
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	    
+		    <CheckBox
+		        android:id="@+id/smoboOffline"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:textColor="@color/white"
+		        android:text="@string/smobo_offline" />
+		
+		</LinearLayout>
+	    
+	    <Button
+	        android:layout_marginTop="15dp"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="20dp"
+	        android:textColor="@color/punchBlauw"
+	        android:background="@drawable/button"
+	        android:text="@string/submitSettings"
+	        android:onClick="saveSettings" />
+	
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="headings">30dp</dimen>
+    <dimen name="headingsMedium">25dp</dimen>
+    <dimen name="headingsSmall">20dp</dimen>
+    <dimen name="searchButtonText">20dp</dimen>
+    <dimen name="noticeSize">20dp</dimen>
+    <dimen name="contentSize">20dp</dimen>
+    <dimen name="smoboButtonSize">18dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

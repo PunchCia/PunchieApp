@@ -1,0 +1,51 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/punchBlauw"
+>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:src="@drawable/punchlogo" />
+    
+    <TextView 
+        android:id="@+id/systemMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/smoboButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/punchBlauw"
+        android:background="@drawable/button"
+        android:text="@string/smobo"
+        android:onClick="openSmoBoActivity" />
+    
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/punchBlauw"
+        android:background="@drawable/button"
+        android:text="@string/settings"
+        android:onClick="openSettingsActivity" />
+
+</LinearLayout>
+</ScrollView>

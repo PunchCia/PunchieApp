@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Punchie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_punchie">Punchie</string>
+    <string name="smobo">Smoelenboek</string>
+    <string name="title_activity_display_smo_bo">Smoelenboek</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_display_settings">Settings</string>
+    <string name="userSetString">Gebruikersnaam:</string>
+    <string name="userSetHint">vul hier je gebruikersnaam in</string>
+    <string name="passSetString">Wachtwoord:</string>
+    <string name="passSetHint">vul hier je wachtwoord in</string>
+    <string name="submitSettings">Instellingen opslaan</string>
+    <string name="smobo_offline">Smoelenboek op telefoon opslaan</string>
+    <string name="searchString">Zoeken</string>
+    <string name="searchMember">vul hier in wie je zoekt</string>
+    <string name="memberList">Leden</string>
+    <string name="komissieList">Komissies</string>
+    <string name="teamList">Teams</string>
+    <string name="title_activity_display_member">Punchlid</string>
+    <string name="amount">(0)</string>
+    <string name="inContacts">Data in contacten</string>
+    <string name="errorOffSmobo">De instelling \'offline smoelenboek\' staat aan, er is echter geen tabel te vinden of deze is leeg. Probeer de instelling opnieuw in en uit te schakelen om het smoelenboek beschikbaar te maken.</string>
+    <string name="noResults">Geen resultaten gevonden...</string>
+    <string name="title_activity_display_team">DisplayTeamActivity</string>
+    <string name="title_activity_display_committee">DisplayCommitteeActivity</string>
+    <string name="players">Players</string>
+    <string name="trainers">Trainers</string>
+    <string name="coaches">Coaches</string>
+    <string name="members">Members</string>
+
+</resources>

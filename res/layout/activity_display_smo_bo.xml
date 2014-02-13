@@ -1,0 +1,140 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:background="@color/punchBlauw" >
+
+    <ImageView
+        android:id="@+id/punchLogo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:src="@drawable/punchlogo" />
+    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="15dp"
+	   	android:layout_marginLeft="5dp"
+	   	android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:orientation="horizontal" >
+	    
+	    <EditText android:id="@+id/search_member"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:background="@color/white"
+	        android:hint="@string/searchMember"
+	        android:maxLength="100" />
+	    
+	    <Button
+	        android:id="@+id/searchText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button"
+	        android:layout_marginLeft="5dp"
+	        android:text="@string/searchString"
+	        android:textColor="@color/punchBlauw"
+	        android:textSize="@dimen/searchButtonText"
+	        android:onClick="searchItem" />
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="0dp"
+	    android:layout_marginRight="5dp" >
+    
+	    <TextView 
+	        android:id="@+id/memberListTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/smoboButtonSize"
+	        android:background="@drawable/border_no_bottom"
+	        android:onClick="refreshMemberList"
+	        android:clickable="true"
+	        android:layout_marginTop="0dp"
+	        android:padding="5dp"
+	        android:textColor="@color/white"
+	        android:text="@string/memberList" />
+	    
+	    <TextView 
+	        android:id="@+id/teamListTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/smoboButtonSize"
+	        android:background="@drawable/border_all_sides"
+	        android:onClick="refreshTeamList"
+	        android:clickable="true"
+	        android:layout_marginTop="0dp"
+	        android:padding="5dp"
+	        android:textColor="@color/white"
+	        android:text="@string/teamList" />
+	    
+	    <TextView 
+	        android:id="@+id/committeeListTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/smoboButtonSize"
+	        android:background="@drawable/border_all_sides"
+	        android:onClick="refreshCommitteeList"
+	        android:clickable="true"
+	        android:layout_marginTop="0dp"
+	        android:padding="5dp"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:textColor="@color/white"
+	        android:text="@string/komissieList" />
+	    
+	    <TextView
+	        android:id="@+id/itemListAmount"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:gravity="right"
+	        android:padding="5dp"
+	        android:paddingRight="0dp"
+	        android:background="@drawable/border_bottom"
+	        android:text="@string/amount"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/smoboButtonSize" />
+	    
+	</LinearLayout>
+    
+   	
+    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	    
+	    <LinearLayout 
+		    android:id="@+id/results"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="2dp"
+		    android:paddingRight="2dp"
+		    android:background="@drawable/border_no_top"
+		    android:orientation="vertical" >
+
+	        <ProgressBar
+	            android:id="@+id/progressBarSmobo"
+	            style="?android:attr/progressBarStyleLarge"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:layout_gravity="center" />
+		
+	    </LinearLayout>
+	    
+	</ScrollView>
+    
+</LinearLayout>
+
